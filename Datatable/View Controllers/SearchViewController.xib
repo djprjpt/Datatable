@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Datatable" customModuleProvider="target">
+            <connections>
+                <outlet property="btn" destination="Yoi-W1-S16" id="JuZ-26-Bqq"/>
+                <outlet property="clr" destination="UKV-sW-2Ix" id="BDI-Pg-vN5"/>
+                <outlet property="txt" destination="Qep-Ow-t8p" id="REe-IL-XD7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qep-Ow-t8p">
+                    <rect key="frame" x="10" y="22" width="180" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="A6c-AY-SLg"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoi-W1-S16">
+                    <rect key="frame" x="195" y="22.5" width="60" height="36"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.3921568627" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Evc-bn-cxE"/>
+                        <constraint firstAttribute="height" constant="36" id="ipB-FD-66L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Search">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissPopoverWithSender:" destination="-1" eventType="touchUpInside" id="fwr-eI-5Kw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-sW-2Ix">
+                    <rect key="frame" x="260" y="22" width="50" height="36"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.39215686274509803" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="37Y-ca-a6R"/>
+                    </constraints>
+                    <state key="normal" title="Clear"/>
+                    <connections>
+                        <action selector="clearSearchWithSender:" destination="-1" eventType="touchUpInside" id="27M-5d-KWX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qep-Ow-t8p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="8R4-aE-2pv"/>
+                <constraint firstItem="UKV-sW-2Ix" firstAttribute="leading" secondItem="Yoi-W1-S16" secondAttribute="trailing" constant="5" id="CTd-Bu-tYv"/>
+                <constraint firstItem="UKV-sW-2Ix" firstAttribute="height" secondItem="Yoi-W1-S16" secondAttribute="height" id="TUL-rZ-U7U"/>
+                <constraint firstItem="Yoi-W1-S16" firstAttribute="centerY" secondItem="Qep-Ow-t8p" secondAttribute="centerY" id="VVj-tP-NHS"/>
+                <constraint firstAttribute="trailing" secondItem="UKV-sW-2Ix" secondAttribute="trailing" constant="10" id="d2r-sc-Wdv"/>
+                <constraint firstItem="Yoi-W1-S16" firstAttribute="leading" secondItem="Qep-Ow-t8p" secondAttribute="trailing" constant="5" id="dPa-dL-Fsq"/>
+                <constraint firstItem="UKV-sW-2Ix" firstAttribute="centerY" secondItem="Yoi-W1-S16" secondAttribute="centerY" id="fn1-cS-ygH"/>
+                <constraint firstItem="Qep-Ow-t8p" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sEU-QB-XLK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-97" y="37"/>
+        </view>
+    </objects>
+</document>
